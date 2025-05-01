@@ -1,4 +1,4 @@
-let url = 'http://api.weatherapi.com/v1/forecast.json?key=5930211b4ea74a12b2d125418252904&q='
+let url = 'https://api.weatherapi.com/v1/forecast.json?key=5930211b4ea74a12b2d125418252904&q='
 let city = 'London'
 let input_search = document.getElementById("search_input")
 let result_weather = document.querySelector(".weather_info")
