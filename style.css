@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+nav .logo {
+    width: 70px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    font-size: 23px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    transition: 2s;
+}
+.menu a:hover {
+    color: orange;
+}
+
+.day {
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+.day .container {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .info {
+    width: 40%;
+}
+
+.container .info h3 {
+    color: orange;
+    font-size: 18px;
+}
+
+.container .info h1 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+form {
+    margin: 30px 0;
+    position: relative;
+
+}
+
+#search_input, #select_city {
+    background: #fafafa;
+    background: linear-gradient(17deg, rgba(250, 250, 250, 1) 0%, rgba(202, 216, 237, 1) 100%);
+    width: 500px;
+    font-size: 14px;
+    padding: 18px 2px 18px 30px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+#search_input::placeholder {
+    color: #1E19283b;
+}
+
+.btn-submit {
+    background: none;
+    border: none;
+    padding: 12px 32px;
+    width: 180px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: -80px;
+    top: 0;
+
+}
+
+.weather_info {
+    height: 70%;
+    width: 40%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.weatherElement .top_pannel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.weatherElement .top_pannel img {
+    width: 70px;
+}
+.weatherElement .central_pannel .temp{
+    font-size: 90px;
+    margin: 40px 0;
+}
+.weatherElement .bottom_pannel{
+    margin-top: 20px;
+}
+.weatherElement .b_info {
+    
+    display: flex;
+    justify-content: space-between;
+}
+.week {
+    height: 80vh;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+.container_week {
+    height: 100%;
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container_week h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+.container_week p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#week_result {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    /* margin-bottom: 100px; */
+}
+.dayElement{
+    background: linear-gradient(180deg, #F0F5FF 0%, rgba(240, 245, 255, 0.22) 100%);
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dayElement h2 {
+    font-size: 15px;
+}
+.dayElement .temp {
+    font-size: 20px;
+}
+.dayElement .text {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
